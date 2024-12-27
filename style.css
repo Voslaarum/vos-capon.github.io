@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+}
+
+.navbar {
+  background: linear-gradient(to right, skyblue, azure, skyblue);
+  height: 150px;
+  display: flex;
+  font-size: 30px;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  color: black;
+}
+.blog {
+  background-color: aliceblue;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center; /* Align itself in the center, vertical alignment */
+  width: 1300px;
+  height: auto;
+  padding: 0px;
+  color: black;
+  text-align: center;
+}
+.blog h1,
+h2,
+h3,
+h4 {
+  margin: 10px 0; /* Adds space between h1 and p */
+  padding: 10px;
+  font-family: "eb garamond";
+}
+.blog h1 {
+  font-size: 39px;
+}
+.blog h2 {
+  font-size: 35px;
+}
+.blog h3 {
+  font-size: 31px;
+}
+.blog h4 {
+  font-size: 27px;
+}
+.blog p {
+  margin: 5px 0; /* Adds space between h1 and p */
+  padding: 20px;
+  text-align: left;
+  font-family: "lora";
+  font-size: 19px;
+}
+.kazananlar {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.panel {
+  background-color: skyblue;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+.mid-banner {
+  background-color: skyblue;
+  height: auto; /* Allow height to adjust based on content */
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap into new rows */
+  gap: 10%; /* Adjust the gap between cards, but not too large */
+  justify-content: space-between; /* Space out items evenly */
+  align-items: flex-start; /* Align items to the top */
+  font-size: 21px;
+  font-family: lora;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden; /* Prevent overflow from cards */
+}
+
+.card {
+  background: linear-gradient(to top left, skyblue, azure, skyblue);
+  height: auto; /* Allow height to adjust based on content */
+  width: 100%; /* Ensure it starts at 100% width for small screens */
+  max-width: 350px; /* Limit card width */
+  border-radius: 10px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow: hidden;
+  margin-top: 50px;
+  margin: 50px;
+  flex: 1 1 33%; /* Each card should take 30% of the row */
+  min-height: 400px; /* Set a minimum height */
+  max-height: 700px; /* Optional: Set a max height to prevent large cards */
+  margin-bottom: 10px; /* Space between rows */
+}
+
+.card > p {
+  font-size: 19px;
+  font-family: lora;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  text-align: left;
+}
+
+.lora-pfont {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 45%; /* 2 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%; /* Full width for small screens */
+  }
+}
+
+.iletisim {
+  background-color: skyblue;
+  height: 100px;
+  color: white;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-top: 1px white solid;
+  gap: 15px;
+}
+img {
+  border-radius: 20px;
+  height: 350px;
+  width: 350px;
+}
+.hakkımızda {
+  background-color: skyblue;
+  height: 1350px;
+  color: black;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid white;
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+.card > img {
+  width: 350px;
+}
+.üst_isim {
+  background: linear-gradient(to right, skyblue, white, skyblue);
+  height: 150px;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.mahir {
+  background-color: white;
+  height: 600px;
+  width: 400px;
+  border-radius: 15px;
+  border: 1px rgb(110, 110, 110) solid;
+  margin: 50px;
+}
+.mahir > p {
+  padding: 10px;
+  margin: 0;
+
+}
+.mahmut > p {
+  padding: 10px;
+}
+i {
+  color: black;
+  font-size: 40px;
+  text-align: right;
+}
+.mahmut {
+  background-color: white;
+  height: 600px;
+  width: 400px;
+  border-radius: 15px;
+  border: 1px rgb(110, 110, 110) solid;
+  margin: 50px;
+}
+a:link {
+  color: SteelBlue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: SteelBlue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(32, 90, 138);
+  text-decoration: none;
+}
+
+a:active {
+  color: SteelBlue;
+  text-decoration: none;
+}
+.banner {
+  height: 570px;
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+}
